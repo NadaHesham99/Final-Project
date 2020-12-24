@@ -78,10 +78,10 @@
 <!--End menu-->
 
 <!--Start Table -->
-   <div class="table text-center">
-     <div class="container-fuild">
-         <h2 class="h1">Users Information</h2>
-           <table class="table">
+   <div class="table ">
+     <div class="container">
+         <h2 class="h1 text-center">Users Information</h2>
+           <table class="table text-center">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -111,9 +111,7 @@
       <td>
           <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
      </td>
-     <td>
-          <a class="link-control add" href="#"><i class="fas fa-plus"></i> Add</a>
-     </td>
+
     </tr>
     <tr>
       <th scope="row">1</th>
@@ -129,9 +127,7 @@
       <td>
           <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
      </td>
-         <td>
-         <a class="link-control add" href="#"><i class="fas fa-plus"></i> Add</a>
-     </td>
+
     </tr>
     <tr>
       <th scope="row">2</th>
@@ -147,13 +143,64 @@
          <td>
           <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
      </td>
-      <td>
-         <a class="link-control add" href="#"><i class="fas fa-plus"></i> Add</a>
-     </td>
+
     </tr>
     
   </tbody>
-</table>
+</table>       
+                  
+   <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-info add-modal" data-toggle="modal" data-target="#exampleModal">
+             <i class="fas fa-plus"></i> Add
+    </button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Add User</h3> 
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form  id="edit-form">
+                  
+				<label>User Name in Arabic</label>
+				  
+                <input type="text" name="name_en" placeholder="اسم المستخدم" title="Category name must be in English character only" pattern="^[\u0621-\u064A ]+$" autocomplete="on" class="form-control">
+                
+                <label>User Name in English</label>
+				  
+                <input type="text" name="name_en" placeholder="User Name" title="Category name must be in English character only" pattern="^[a-zA-Z ]+$" autocomplete="on" class="form-control">
+                
+                 <label>User Adress</label>
+				  
+                <input type="text" name="name_en" placeholder="User Address" title=" User Adress must be in English character only" pattern="^[a-zA-Z ]+$" autocomplete="on" class="form-control">
+                
+                <label>User Phone Number </label>
+				     
+                <input type="text" name="Price" name="phone" placeholder="+201..." pattern="^\+?\d{10,}$" title="your phone must be at least 10 digits" autocomplete="on" class="form-control">
+                
+                <label>User Email</label>
+                  
+                <input type="text" name="email" placeholder="name@domain-name.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="user email must be like that name@domain-name.com" autocomplete="on" class="form-control" >
+                
+                <label>User Password</label>
+                
+                <input type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" class="form-control" >
+                     
+                <input type="submit" value="Add" title="Can't Register" data-content="you should match all validation first" class="btn-resigter form-control">
+			
+			</form>
+      </div>
+        
+        
+      
+    </div>
+  </div>
+</div>
        </div>
     </div>
 <!--End Table-->

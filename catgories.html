@@ -78,10 +78,10 @@
 <!--End menu-->
 
 <!--Start Table -->
-   <div class="table text-center">
+   <div class="table ">
      <div class="container">
-         <h2 class="h1">Categories Information</h2>
-           <table class="table">
+         <h2 class="h1 text-center">Categories Information</h2>
+           <table class="table text-center">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -90,7 +90,6 @@
       <th scope="col">Description</th>
       <th scope="col">Edit</th>
       <th scope="col">Delete</th>
-      <th scope="col">Add</th>
     </tr>
   </thead>
   <tbody>
@@ -105,9 +104,6 @@
       <td>
           <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
      </td>
-     <td>
-          <a class="link-control add" href="#"><i class="fas fa-plus"></i> Add</a>
-     </td>
     </tr>
     <tr>
       <th scope="row">1</th>
@@ -119,9 +115,6 @@
       </td>
       <td>
           <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
-     </td>
-     <td>
-          <a class="link-control add" href="#"><i class="fas fa-plus"></i> Add</a>
      </td>
     </tr>
     <tr>
@@ -135,13 +128,52 @@
       <td>
           <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
      </td>
-    <td>
-          <a class="link-control add" href="#"><i class="fas fa-plus"></i> Add</a>
-     </td>
     </tr>
     
   </tbody>
 </table>
+         
+              <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-info add-modal" data-toggle="modal" data-target="#exampleModal">
+             <i class="fas fa-plus"></i> Add
+    </button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Add Category</h3> 
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form  id="edit-form">
+                  
+				   
+				<label>Categories Name in English</label>
+				  
+                <input type="text" name="name_en" placeholder="Category Name" title="Category name must be in English character only" autocomplete="on" class="form-control">
+                
+                <label>Categories minimum Price </label>
+				     
+                <input type="text" name="Price" placeholder="300" title="Product Price must be at least 5 digits" autocomplete="on" class="form-control">
+                
+                <label> Categories Description</label>
+                  
+                <input type="text" name="name_en" placeholder="Category Description" title="Category Description must be in English character" autocomplete="on" class="form-control">
+                     
+                <input type="submit" value="Add" title="Can't Register" data-content="you should match all validation first" class="btn-resigter form-control">
+			
+			</form>
+      </div>
+        
+        
+      
+    </div>
+  </div>
+</div>
        </div>
     </div>
 <!--End Table-->

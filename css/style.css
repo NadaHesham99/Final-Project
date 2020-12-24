@@ -561,7 +561,8 @@ body{
 /*Start Form*/
 
 .resigter,
-.login{
+.login.
+.modal{
     padding: 100px 0
 }
 .resigter h2,
@@ -569,8 +570,15 @@ body{
     color: #ff2020;
     margin-bottom: 30px;
 }
+.modal h3{
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+     margin-bottom: 5px;
+}
 .resigter input,
-.login input{
+.login input,
+.modal-body input{
    border-radius: 20px
 }
 .resigter label,
@@ -578,7 +586,8 @@ body{
     margin-left: 12px
 }
 .resigter .btn-resigter,
-.login .btn-resigter{
+.login .btn-resigter,
+.modal-body .btn-resigter{
     border: none;
     width: 100%;
     margin-top: 30px;
@@ -588,11 +597,13 @@ body{
 }
 
 .resigter .btn-resigter:hover,
-.login .btn-resigter:hover{
+.login .btn-resigter:hover,
+.modal-body .btn-resigter:hover{
     background-color: #232F3E
 }
 .resigter .agree,
-.login .agree{
+.login .agree,
+.modal-body .agree{
     text-decoration: none;
     color: #00f;
     margin-left: 5px
@@ -613,7 +624,9 @@ body{
 .login .container{
     width: 600px
 }
-
+.modal {
+    top: 13%;
+}
 /*===========================================================*/
 
 /*Start Admin*/
@@ -664,8 +677,10 @@ body{
     border: 1px solid #f00
 }
 .table .add{
-    background: #007412;
-    border: 1px solid #005f33
+    background: #006f11;
+    border: 1px solid #005f33;
+    padding: 10px 20px;
+    margin-bottom: 50px
 }
 
 .table img{
@@ -697,7 +712,9 @@ body{
 .edit .container{
     width: 700px
 }
-.edit input{
+.edit input,
+.modal-body input
+{
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -706,7 +723,8 @@ body{
 .edit input[type="file"]{
     padding-left: 2px ;
 }
-.edit label{
+.edit label,
+.modal-body label{
     font-size: 20px;
     font-weight: 600;
     margin-left: 10px
