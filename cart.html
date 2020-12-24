@@ -59,61 +59,60 @@
     
 <!--End Navbar-->
 
-<!--Start menu-->
-    		<div class="wrapper text-center">
-			<div id="sidebar" class="nav-admin container">
-				<ul class="list-unstyled components">
-					<li>
-						<a href="admin.html" >Products</a>
-					</li>
-					<li>
-						<a href="catgories.html" >categories</a>
-					</li>
-                    <li>
-						<a href="user.html" class="active-link"> users</a>
-					</li>
-				</ul>
-                </div>
-			</div>
-<!--End menu-->
 
-<div class="edit">
+
+<!--Start Table -->
+   <div class="table text-center">
+     <div class="container">
+         <h2 class="h1">Shopping Cart</h2>
+           <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Picture</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/Accessories/5.jpg" class="img-fluid"></td>
+      <td>Hair Accessories</td>
+      <td>200$</td>
+      <td>1</td>
+      <td>
+          <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+     </td>
+    </tr>
+    <tr>
+      <td><img src="images/furniture/11.jpg" class="img-fluid"></td> 
+      <td>table</td>
+      <td>500$</td>
+      <td>2</td>
+      <td>
+          <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+     </td>
+    </tr>
+    <tr>
+      <td><img src="images/clothes/1.jpg" class="img-fluid"></td>
+      <td>Gloves</td>
+      <td>150$</td>
+      <td>1</td>
+      <td>
+          <a class="link-control delete" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+     </td>
+    </tr>
     
-  <section class="container">
-			<h2 class="h1 text-center">Edit Users</h2>
-			<form  id="edit-form">
-                  
-				<label>User Name in Arabic</label>
-				  
-                <input type="text" name="name_en" placeholder="اسم المستخدم" title="Category name must be in English character only" pattern="^[\u0621-\u064A ]+$" autocomplete="on" class="form-control">
-                
-                <label>User Name in English</label>
-				  
-                <input type="text" name="name_en" placeholder="User Name" title="Category name must be in English character only" pattern="^[a-zA-Z ]+$" autocomplete="on" class="form-control">
-                
-                 <label>User Adress</label>
-				  
-                <input type="text" name="name_en" placeholder="User Address" title=" User Adress must be in English character only" pattern="^[a-zA-Z ]+$" autocomplete="on" class="form-control">
-                
-                <label>User Phone Number </label>
-				     
-                <input type="text" name="Price" name="phone" placeholder="+201..." pattern="^\+?\d{10,}$" title="your phone must be at least 10 digits" autocomplete="on" class="form-control">
-                
-                <label>User Email</label>
-                  
-                <input type="text" name="email" placeholder="name@domain-name.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="user email must be like that name@domain-name.com" autocomplete="on" class="form-control" >
-                
-                <label>User Password</label>
-                
-                <input type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" class="form-control" >
-                     
-                <input type="submit" value="Edit" title="Can't Register" data-content="you should match all validation first" class="btn-resigter form-control">
-			
-			</form>
-			
-		</section>    
-</div>
-<!--End login --> 
+  </tbody>
+</table>
+         <h3>Total Price : </h3> <span>850$</span>
+            <div class="flex-end">
+              <button class="btn btn-primary">Check Out</button>
+         </div>
+       </div>
+    </div>
+<!--End Table-->
     
     <!--Start Footer-->
       <section class="footer">
@@ -132,7 +131,7 @@
                   <ul class="list-unstyled">
                      <li><a href="#">About</a></li>
                      <li><a href="#lastest">Lastest</a></li>
-                     <li><a href="#">Cart</a></li>
+                     <li><a href="cart.html">Cart</a></li>
                      <li><a href="#">Contact Us</a></li>
                   </ul>
                 </div>

@@ -663,9 +663,27 @@ body{
     background: #ff2020;
     border: 1px solid #f00
 }
+.table .add{
+    background: #007412;
+    border: 1px solid #005f33
+}
+
 .table img{
     width: 80px;
     height: 80px
+}
+.table h3{
+    display: inline;
+    text-align: left
+}
+.table span{
+    font-size: 20px;
+    color: #ff2020;
+    font-weight: bold
+}
+.table .flex-end {
+    display: flex;
+    justify-content: flex-end;
 }
 /*End Admin*/
 
