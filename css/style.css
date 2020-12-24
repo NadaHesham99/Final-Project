@@ -679,7 +679,7 @@ body{
 .table span{
     font-size: 20px;
     color: #ff2020;
-    font-weight: bold
+    font-weight: 600
 }
 .table .flex-end {
     display: flex;
