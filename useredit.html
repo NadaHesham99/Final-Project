@@ -106,6 +106,13 @@
                 <label>User Password</label>
                 
                 <input type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" class="form-control" >
+                
+                <label>User Role</label>
+
+                <select name="role" id="role" class="form-control">
+                   <option value="0">admin</option>
+                   <option value="1">User</option>
+                </select>
                      
                 <input type="submit" value="Edit" title="Can't Register" data-content="you should match all validation first" class="btn-resigter form-control">
 			

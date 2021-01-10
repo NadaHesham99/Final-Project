@@ -138,18 +138,21 @@
          <button type="button" class="btn btn-info add-modal" data-toggle="modal" data-target="#exampleModal">
              <i class="fas fa-plus"></i> Add
          </button>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-          <h3 class="modal-title" id="exampleModalLabel">Add Product</h3> 
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <form  id="edit-form">
+
+         
+         
+<!--Start Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h3 class="modal-title" id="exampleModalLabel">Add Product</h3> 
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+           <div class="modal-body">
+          <form  id="edit-form">
                   
 				<label>Procduct Name in English</label>
 				  
@@ -162,6 +165,17 @@
                 <label>Product Image</label>
                   
                 <input type="file" name="Product Image" placeholder="Choose Product Image" title="Procduct Image must be taken" class="form-control">
+              
+               <label>Categoty Name</label>
+
+                <select name="category" class="form-control" required>
+                <option value="0">Clothes</option>
+                <option value="1">Accessories</option>
+                <option value="2">Wooden Toys</option>
+                <option value="3">Furniture</option>
+                <option value="4">carpets</option>
+                <option value="5">Paintings</option>
+                </select>
                      
                 <input type="submit" value="Add" title="Can't Register" data-content="you should match all validation first" class="btn-resigter form-control">
 			
@@ -173,6 +187,7 @@
     </div>
   </div>
 </div>
+<!--End Modal-->
        </div>
     </div>
 <!--End Table-->

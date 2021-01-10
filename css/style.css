@@ -561,7 +561,7 @@ body{
 /*Start Form*/
 
 .resigter,
-.login.
+.login,
 .modal{
     padding: 100px 0
 }
@@ -625,7 +625,7 @@ body{
     width: 600px
 }
 .modal {
-    top: 13%;
+    top: 3%;
 }
 /*===========================================================*/
 
@@ -737,3 +737,10 @@ body{
 .edit .btn-resigter:hover{
     background-color: #232F3E;
 }
+#edit-form select ,
+.modal select{
+    border: 1px solid #cfd1d4;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+

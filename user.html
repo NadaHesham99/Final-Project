@@ -91,9 +91,9 @@
       <th scope="col">Phone</th>
       <th scope="col">Email</th>
       <th scope="col">Password</th>
+      <th scope="col">role</th>
       <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
-      <th scope="col">Add</th>
+     <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -105,6 +105,7 @@
       <td>01234567890</td>
       <td>asmaa@gmail.com</td>
       <td>123!456@</td>
+      <td>user</td>
       <td>
          <a class="link-control" href="useredit.html"><i class="fas fa-pen"></i> Edit</a>
       </td>
@@ -121,6 +122,7 @@
       <td>01234567890</td>
       <td>aya123@gmail.com</td>
       <td>v1234!xss</td>
+      <td>User</td>
       <td>
          <a class="link-control" href="useredit.html"><i class="fas fa-pen"></i> Edit</a>
       </td>
@@ -137,6 +139,7 @@
       <td>01234567890</td>
       <td>fatma555@gmail.com</td>
       <td>22fff222</td>
+      <td>admin</td>
       <td>
          <a class="link-control" href="useredit.html"><i class="fas fa-pen"></i> Edit</a>
       </td>
@@ -190,6 +193,13 @@
                 <label>User Password</label>
                 
                 <input type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" class="form-control" >
+                
+                <label>User Role</label>
+
+                <select name="role" id="role" class="form-control">
+                   <option value="0">admin</option>
+                   <option value="1">User</option>
+                </select>
                      
                 <input type="submit" value="Add" title="Can't Register" data-content="you should match all validation first" class="btn-resigter form-control">
 			
